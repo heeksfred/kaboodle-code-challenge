@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.main {
+    display: inline-flex;
+	flex-direction: row;
+}
+
+.footer {
+    display: inline-flex;
+	flex-direction: row;
+	background: lightcoral
+}

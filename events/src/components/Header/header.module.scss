@@ -1,0 +1,27 @@
+.header {
+    background: #f4f5f6;
+}
+
+.title {
+    display: flex;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;
+}
+
+.nav {
+	display: flex;
+    max-width: 50%;
+    padding: 10px 10px 10px 0;
+	gap: 10px;
+}
+
+.searchInput {
+    margin-right: 4px;
+    flex-grow: 1;
+}
+
+.toolbar {
+    display: flex;
+    justify-self: flex-end;
+}

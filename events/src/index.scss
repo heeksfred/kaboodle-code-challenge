@@ -1,0 +1,464 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  width: 100vw;
+}
+
+.button {
+  font-family: "Rubik" !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+input {
+  font-family: "Rubik" !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik";
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Rubik";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.lg-text {
+  font-size: 20px;
+}
+
+.sm-text {
+  font-size: 13px;
+}
+
+
+
+
+.right-inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  span {
+    margin-right: 10px;
+  }
+}
+
+.sa-loading {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.no-data {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="time"],
+input[type="date"] {
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+  }
+}
+
+.auto {
+  &-width {
+    width: auto !important;
+  }
+  &-height {
+    height: auto;
+  }
+  &-margin {
+    margin: auto;
+  }
+  &-background {
+    background: auto;
+  }
+}
+
+.txt {
+  &-center {
+    text-align: center;
+  }
+  &-no-wrap {
+    white-space: nowrap;
+  }
+}
+
+.xlg-pad {
+  padding: 80px;
+}
+.lg-pad {
+  padding: 40px;
+}
+.md-pad {
+  padding: 20px;
+}
+.sm-pad {
+  padding: 10px;
+}
+.xsm-pad {
+  padding: 5px;
+}
+.no-pad {
+  padding: 0;
+}
+
+.xlg-pad-left {
+  padding-left: 80px;
+}
+.lg-pad-left {
+  padding-left: 40px;
+}
+.md-pad-left {
+  padding-left: 15px;
+}
+.sm-pad-left {
+  padding-left: 10px;
+}
+.xsm-pad-left {
+  padding-left: 5px;
+}
+.no-pad-left {
+  padding-left: 0;
+}
+
+.xlg-pad-right {
+  padding-right: 80px;
+}
+.lg-pad-right {
+  padding-right: 40px;
+}
+.md-pad-right {
+  padding-right: 15px;
+}
+.sm-pad-right {
+  padding-right: 10px;
+}
+.xsm-pad-right {
+  padding-right: 5px;
+}
+
+.no-pad-right {
+  padding-right: 0;
+}
+.xlg-pad-top {
+  padding-top: 80px;
+}
+.lg-pad-top {
+  padding-top: 40px;
+}
+.md-pad-top {
+  padding-top: 20px;
+}
+.sm-pad-top {
+  padding-top: 10px;
+}
+.xsm-pad-top {
+  padding-top: 5px;
+}
+.no-pad-top {
+  padding-top: 0;
+}
+.xlg-pad-bottom {
+  padding-bottom: 80px;
+}
+.lg-pad-bottom {
+  padding-bottom: 40px;
+}
+.md-pad-bottom {
+  padding-bottom: 15px;
+}
+.sm-pad-bottom {
+  padding-bottom: 10px;
+}
+.xsm-pad-bottom {
+  padding-bottom: 5px;
+}
+
+.xlg-pad-vertical {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.lg-pad-vertical {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.md-pad-vertical {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sm-pad-vertical {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.xsm-pad-vertical {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.xlg-pad-horizontal {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.lg-pad-horizontal {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.md-pad-horizontal {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sm-pad-horizontal {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.xsm-pad-horizontal {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.no-pad-horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-pad-left {
+  padding-left: 20px;
+}
+
+.xlg-mar {
+  margin: 80px;
+}
+.lg-mar {
+  margin: 40px;
+}
+.md-mar {
+  margin: 20px;
+}
+.sm-mar {
+  margin: 10px;
+}
+.xsm-mar {
+  margin: 5px;
+}
+
+.no-mar {
+  margin: 0;
+}
+.xlg-mar-bottom {
+  margin-bottom: 80px;
+}
+.lg-mar-bottom {
+  margin-bottom: 40px;
+}
+.smd-mar-bottom {
+  margin-bottom: 30px;
+}
+.md-mar-bottom {
+  margin-bottom: 20px;
+}
+.sm-mar-bottom {
+  margin-bottom: 10px;
+}
+.xsm-mar-bottom {
+  margin-bottom: 5px;
+}
+.no-mar-bottom {
+  margin-bottom: 0;
+}
+.xlg-mar-top {
+  margin-top: 80px;
+}
+.lg-mar-top {
+  margin-top: 40px;
+}
+.md-mar-top {
+  margin-top: 20px;
+}
+.sm-mar-top {
+  margin-top: 10px;
+}
+.xsm-mar-top {
+  margin-top: 5px;
+}
+.no-mar-top {
+  margin-top: 0;
+}
+.xlg-mar-right {
+  margin-right: 80px;
+}
+.lg-mar-right {
+  margin-right: 40px;
+}
+.md-mar-right {
+  margin-right: 20px;
+}
+.sm-mar-right {
+  margin-right: 10px;
+}
+.xsm-mar-right {
+  margin-right: 5px;
+}
+.no-mar-right {
+  margin-right: 0;
+}
+.xlg-mar-left {
+  margin-left: 80px;
+}
+
+.lg-mar-left {
+  margin-left: 40px;
+}
+.md-mar-left {
+  margin-left: 20px;
+}
+.sm-mar-left {
+  margin-left: 10px;
+}
+.xsm-mar-left {
+  margin-left: 5px;
+}
+.no-mar-left {
+  margin-left: 0;
+}
+.xlg-mar-vertical {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.lg-mar-vertical {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.md-mar-vertical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sm-mar-vertical {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.xsm-mar-vertical {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.no-mar-vertical {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.xlg-mar-horizontal {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.lg-mar-horizontal {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.md-mar-horizontal {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.sm-mar-horizontal {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.xsm-mar-horizontal {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.no-mar-horizontal {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+
+  &.column {
+    flex-direction: column;
+  }
+  &.between {
+    justify-content: space-between;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.evenly {
+    justify-content: space-evenly;
+  }
+  &.middle {
+    align-items: center;
+  }
+  &.start {
+    align-items: flex-start;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+  &.grow {
+    > * {
+      flex: 1 1;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &.auto {
+    > * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.stretch {
+    height: 100%;
+    flex-grow: 1;
+  }
+  &.bottom {
+    align-items: flex-end;
+  }
+
+  &.pad {
+    &-btm {
+      padding-bottom: 15px;
+    }
+  }
+}

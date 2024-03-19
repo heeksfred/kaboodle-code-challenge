@@ -1,0 +1,16 @@
+[
+	{
+		"ID": "1343f3a9-118d-452e-8c9c-812e17ed10b3",
+		"eventName": "Glastonbury",
+		"startDate": "2024-07-26",
+		"endDate": "2024-07-30",
+		"eventDescription": "Worthy Farm, Pilton, Somerset"		
+	},
+	{
+		"ID": "89d009b3-f21a-4a6d-8ea5-269d33df87ff",
+		"eventName": "Beautiful Days",
+		"startDate": "2024-08-16",
+		"endDate": "2024-08-18",
+		"eventDescription": "Escot Park, Devon"	
+	}
+]

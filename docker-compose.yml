@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+    database:
+        container_name: mysql-db
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD: rTE8e8F#W4E@uZ
+            MYSQL_DATABASE: test_database
+            MYSQL_USER: test_user
+            MYSQL_PASSWORD: test_password
+        ports:
+            - '3306:3306'
+        expose:
+            - 3306
+        volumes:
+            - ./database:/docker-entrypoint-initdb.d
+
+    events:
+        container_name: events-app
+        image: node:latest
+        build: ./events
+        ports:
+            - '3000:3000'
+        expose:
+            - 3000
+        command: 'pnpm run start'
+
+    api:
+        container_name: node-api
+        image: node:20
+        build: ./api
+        ports:
+            - '5000:5000'
+        expose:
+            - 5000
+        command: 'pnpm run serve'
+        depends_on:
+            - database

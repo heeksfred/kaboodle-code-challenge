@@ -1,0 +1,14 @@
+.details {
+	border-radius: 5px;
+	padding: 5px;
+	width: 60%;
+	overflow-y: scroll;
+	display:flex;
+    background: orange;
+}
+
+.main {
+	flex-wrap: wrap;
+	font-size:medium;
+	padding-bottom: 200px;;
+}
