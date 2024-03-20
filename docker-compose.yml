@@ -10,8 +10,6 @@ services:
             MYSQL_PASSWORD: test_password
         ports:
             - '3306:3306'
-        expose:
-            - 3306
         volumes:
             - ./database:/docker-entrypoint-initdb.d
 
@@ -21,8 +19,8 @@ services:
         build: ./events
         ports:
             - '3000:3000'
-        expose:
-            - 3000
+        links:
+            - "api:api"
         command: 'pnpm run start'
 
     api:
@@ -31,8 +29,8 @@ services:
         build: ./api
         ports:
             - '5000:5000'
-        expose:
-            - 5000
+        links:
+            - "database:database"
         command: 'pnpm run serve'
         depends_on:
             - database

@@ -6,7 +6,7 @@ export const mySQL = createConnection({
     user: 'test_user',
     database: 'test_database',
     password: 'test_password',
-    host: 'localhost',
+    host: 'database',
 });
 
 export const sendError = (res: Response, message: String) => res.status(500).send(`Error - ${message}`);
