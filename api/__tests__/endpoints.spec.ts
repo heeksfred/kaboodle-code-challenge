@@ -26,6 +26,13 @@ describe('endpoint tests', () => {
 		expect(res.statusCode).toBe(200);
 		expect(res.body).toEqual(events);
 	});
+	
+	it('GETs /events by date', async () => {
+		const res = await request(app).get('/events?searchDate=2024-08-01');
+
+		expect(res.statusCode).toBe(200);
+		expect(res.body).toEqual(events);
+	});
 
 	it('GETs /tickets', async () => {
 		const res = await request(app).get('/tickets/89d009b3-f21a-4a6d-8ea5-269d33df87ff');
